@@ -4,7 +4,6 @@ import java.util.Random;
 
 import com.tatait.tatamusic.MusicPlay;
 import com.tatait.tatamusic.R;
-import com.tatait.tatamusic.R.drawable;
 import com.tatait.tatamusic.pojo.MusicInfo;
 
 import android.app.Service;
