@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sblue">#219ac6</color>
+    <color name="blue">#0000ff</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ffff00</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="huise">#686767</color>  
+    <color name="touming">#008d8d8d</color>
+    <color name="special">#00000000</color>
+    
+    <color name="songTime">#f6f5ec</color>
+    <color name="singer">#666666</color>
+    
+</resources>

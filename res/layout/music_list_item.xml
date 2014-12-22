@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/songNum"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp" />
+    
+	<TextView
+        android:id="@+id/songTime"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/songTime"
+        android:textSize="20sp" />
+	
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+		android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/songNum"
+        android:layout_toLeftOf="@id/songTime"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/songName"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:singleLine="true"
+			android:ellipsize="end"
+            android:gravity="bottom"
+            android:textColor="@color/songTime"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/singer"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/singer"
+            android:ellipsize="end" 
+            android:gravity="top"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
