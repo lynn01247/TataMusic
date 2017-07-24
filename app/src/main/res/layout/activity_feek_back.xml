@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_bar" />
+
+    <EditText
+        android:id="@+id/feekback_activity_phone_edi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_corner_grad_bg"
+        android:ellipsize="end"
+        android:hint="@string/input_contact"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/dimgray"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/feekback_activity_content_edi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_corner_grad_bg"
+        android:gravity="top"
+        android:hint="@string/input_advice"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/dimgray"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/feekback_activity_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/corner_blue_color_5dp"
+        android:padding="10dp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</LinearLayout>

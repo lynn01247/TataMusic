@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Tata音乐">
+        <Preference
+            android:key="version"
+            android:summary="V"
+            android:title="@string/now_version" />
+        <Preference
+            android:key="update"
+            android:title="@string/check_update" />
+        <Preference
+            android:key="share"
+            android:title="@string/menu_share" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about_api">
+        <Preference
+            android:summary="@string/baidu_music_interface"
+            android:title="@string/online_music" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5677fc</color>
+    <color name="colorPrimaryDark">#455ede</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPink">#FD35F4</color>
+    <color name="navigationBarColor">#f46444</color>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_900">#212121</color>
+    <color name="grey_900_dark">#121111</color>
+    <color name="grey_900_accent">#370625</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#80FFFFFF</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="translucent_grey">#809E9E9E</color>
+    <color name="translucent_white_8p">#14FFFFFF</color>
+    <color name="translucent_white_16p">#29FFFFFF</color>
+    <color name="translucent_white_24p">#3DFFFFFF</color>
+    <!--play bar-->
+    <color name="translucent_white_96p">#F5FFFFFF</color>
+    <color name="translucent_grey_300_96p">#F5E0E0E0</color>
+    <color name="translucent_grey_900_96p">#F5212121</color>
+    <color name="translucent_grey_700_96p">#F5616161</color>
+
+    <color name="dimgray">#ff696969</color>
+    <color name="gray">#8a8a8a</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="layout_title_bg">#23c0ff</color>
+    <color name="background">#f4f4f4</color>
+    <color name="test_color">#696969</color>
+    <color name="text_color">#FF000000</color>
+    <color name="small_font">#FF757575</color>
+</resources>

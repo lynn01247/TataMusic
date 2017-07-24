@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.tatait.tatamusic"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 5
+        versionName "1.7.7211700"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        ndk {
+//            // 设置支持的SO库架构
+//            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false       //混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+ext {
+    supportVersion = "25.3.1"
+}
+
+bugly {
+    appId = "eaa4506ba6"
+    appKey = "6379c7fc-9b85-4b3d-a650-8900e8bf89d6"
+    debug = true
+
+}
+
+repositories {
+    maven { url 'https://github.com/500px/500px-android-blur/raw/master/releases/' }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:appcompat-v7:${supportVersion}"
+    compile "com.android.support:design:${supportVersion}"
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'me.wcy:lrcview:1.4.1'
+    compile 'com.tencent.bugly:crashreport_upgrade:1.2.5'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}

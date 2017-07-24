@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:authcodeview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_app_bar" />
+
+    <FrameLayout
+        android:id="@+id/fl_user_info_part1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_user_info_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:alpha="0.1"
+            android:background="@drawable/page3"
+            android:orientation="vertical"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:gravity="center"
+            android:text="@string/tata_music"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/blurred_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginStart="50dp"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_user_login"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/corner_blue_color_5dp"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_user_register"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corner_blue_color_5dp"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_user_info_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:hint="@string/user_name"
+            android:paddingEnd="1dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="1dp"
+            android:paddingStart="30dp" />
+
+        <EditText
+            android:id="@+id/et_user_info_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_user_info_username"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:hint="@string/input_pass"
+            android:inputType="textPassword"
+            android:paddingEnd="1dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="1dp"
+            android:paddingStart="30dp" />
+
+        <EditText
+            android:id="@+id/et_user_info_password2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_user_info_password"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:hint="@string/input_pass_again"
+            android:inputType="textPassword"
+            android:paddingEnd="1dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="1dp"
+            android:paddingStart="30dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_info_code"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/et_user_info_password2"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_user_info_code"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="3"
+                android:hint="@string/input_code"
+                android:paddingEnd="1dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="1dp"
+                android:paddingStart="30dp" />
+
+            <com.tatait.tatamusic.utils.AuthCodeView
+                android:id="@+id/ac_user_info_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                authcodeview:titleTextColor="#00ffff"
+                authcodeview:titleTextSize="40sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/refresh_code"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_user_info_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_user_info_code"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/corner_blue_color_5dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>
